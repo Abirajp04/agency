@@ -1,0 +1,137 @@
+html{
+    background-color: #faf9f6;
+}
+
+h1{
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-left: 2%;
+    margin-top: 1%;
+}   
+
+
+#unique{
+    font-style: italic;
+    color: darkblue;
+}
+
+header p{
+    color: orange;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-left:2% ;
+    font-style: italic;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.card-image{
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-right: 5%;
+}
+
+
+
+.card-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 2%;
+}
+
+.card-content{
+    font-family: monospace;
+    font-size: large;
+}
+
+#footer{
+    text-align: right;
+    margin-right: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+  
+}
+
+@media(min-width:651px)
+{
+    h1{
+        font-size: 5em;
+    }
+
+    header{
+        font-size: 4em;
+    }
+    .card-title{
+        font-size: 25px;
+    }
+
+    #main-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .card{
+        margin: 2%;
+        max-width: 650px;
+    }
+
+    #left-card{
+        float: left;
+    }
+    
+    #right-card{
+        float: right;
+    }
+
+
+    #footer{
+        grid-column: span 2;
+        font-size: medium;
+    }
+}
+
+    @media(max-width:650px)
+    {
+        body{
+            font-size:1rem;
+        }
+        h1{
+            font-size: 5em;
+        }
+    
+        header{
+            font-size: 4em;
+        }
+        .card-title{
+            font-size: 25px;
+        }
+    
+        #main-content{
+            display: grid;
+            grid-template-columns: 1fr;
+            
+        }
+
+        .card{
+            margin: 2%;
+            max-width: 600px;
+        }
+    
+        #left-card{
+            float: left;
+            max-width: 650px;
+        }
+        
+        #right-card{
+            float: right;
+            max-width: 650px;
+        }
+    
+    
+        #footer{
+            font-size: medium;
+        }
+    }
